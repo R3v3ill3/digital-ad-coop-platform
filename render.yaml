@@ -2,7 +2,6 @@ services:
   - type: web
     name: digital-coop-backend
     env: node
-    plan: free
     buildCommand: cd backend-node && npm install
     startCommand: cd backend-node && npm start
     envVars:
@@ -15,7 +14,6 @@ services:
   - type: web
     name: digital-coop-frontend
     env: static
-    plan: free
     buildCommand: cd frontend && npm install && npm run build
     staticPublishPath: frontend/dist
     autoDeploy: true
