@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const NewCampaign = () => {
+function CampaignBuilder() {
   const [formData, setFormData] = useState({
     name: '',
     goal: '',
@@ -19,11 +19,12 @@ const NewCampaign = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     sessionStorage.setItem('campaignForm', JSON.stringify(formData));
-    navigate('/review');
+    navigate('/app/dashboard');
   };
 
   return (
-    <form className="max-w-xl space-y-4" onSubmit={handleSubmit}>
+    <form className="max-w-xl space-y-4 p-6" onSubmit={handleSubmit}>
+      <h2 className="text-2xl font-bold mb-4">Build Your Campaign</h2>
       <div>
         <label className="block font-medium">Campaign Name</label>
         <input name="name" value={formData.name} onChange={handleChange} className="w-full border rounded p-2" required />
@@ -40,9 +41,9 @@ const NewCampaign = () => {
         <label className="block font-medium">Budget</label>
         <input type="number" name="budget" value={formData.budget} onChange={handleChange} className="w-full border rounded p-2" />
       </div>
-      <button type="submit" className="bg-blue-600 text-white px-4 py-2 rounded">Continue</button>
+      <button type="submit" className="bg-blue-600 text-white px-4 py-2 rounded">Submit</button>
     </form>
   );
-};
+}
 
-export default NewCampaign;
+export default CampaignBuilder;
