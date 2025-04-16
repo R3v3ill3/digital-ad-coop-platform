@@ -12,11 +12,11 @@ services:
     healthCheckPath: /health
     region: oregon
 
-  - type: static
+  - type: web
     name: digital-coop-frontend
+    env: static
     plan: free
     buildCommand: cd frontend && npm install && npm run build
     staticPublishPath: frontend/dist
-    environment: static
     autoDeploy: true
-    envVars: []
+   
