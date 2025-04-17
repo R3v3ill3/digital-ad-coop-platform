@@ -24,7 +24,7 @@ const handleGeneratePlan = async () => {
   setLoading(true);
 
   try {
-    const res = await fetch("http://localhost:4000/api/suggest-plan", {
+    const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/suggest-plan`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

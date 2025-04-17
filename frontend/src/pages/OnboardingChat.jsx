@@ -68,7 +68,7 @@ function OnboardingChat() {
     } else {
       // Send data to backend
       try {
-        await fetch("http://localhost:4000/api/onboarding", {
+        await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/onboarding`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
