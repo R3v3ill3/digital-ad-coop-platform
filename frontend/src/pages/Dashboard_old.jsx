@@ -2,11 +2,9 @@
 import React, { useEffect, useState } from 'react';
 import { db } from '../firebase';
 import { collection, onSnapshot } from 'firebase/firestore';
-import { useNavigate } from 'react-router-dom';
 
 export default function Dashboard() {
   const [campaigns, setCampaigns] = useState([]);
-  const navigate = useNavigate();
 
   useEffect(() => {
     const unsub = onSnapshot(collection(db, 'campaigns'), (snapshot) => {
@@ -15,22 +13,9 @@ export default function Dashboard() {
     return () => unsub();
   }, []);
 
-  const handleNewCampaign = () => {
-    navigate('/app/campaign/new'); // Adjust this route as needed
-  };
-
   return (
-    <div className="p-4 max-w-4xl mx-auto space-y-4">
-      <div className="flex justify-between items-center">
-        <h2 className="text-2xl font-bold">Your Campaigns</h2>
-        <button
-          onClick={handleNewCampaign}
-          className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
-        >
-          + New Campaign
-        </button>
-      </div>
-
+    <div className="p-4">
+      <h2 className="text-2xl font-bold mb-4">Your Campaigns</h2>
       <ul className="space-y-2">
         {campaigns.map((c) => (
           <li key={c.id} className="p-2 border rounded">

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { db } from '../firebase';
+import { db } from '../firebase'; // adjust if needed
 import { doc, setDoc } from 'firebase/firestore';
 import { getAuth } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
@@ -10,7 +10,6 @@ export default function OnboardingChat() {
   const [answers, setAnswers] = useState({});
   const [otherInput, setOtherInput] = useState('');
   const [multiSelect, setMultiSelect] = useState([]);
-  const [awaitingOtherInput, setAwaitingOtherInput] = useState(false);
   const scrollRef = useRef(null);
   const auth = getAuth();
   const navigate = useNavigate();
@@ -102,7 +101,6 @@ export default function OnboardingChat() {
     if (option === 'Other') {
       setTimeout(() => {
         setMessages(prev => [...prev, { sender: 'bot', text: 'Please specify:' }]);
-        setAwaitingOtherInput(true);
       }, 500);
       return;
     }
@@ -112,12 +110,6 @@ export default function OnboardingChat() {
 
   const handleMultiSubmit = () => {
     const step = steps[stepIndex];
-    if (multiSelect.includes('Other')) {
-      setMessages(prev => [...prev, { sender: 'bot', text: 'Please specify what "Other" refers to:' }]);
-      setAwaitingOtherInput(true);
-      return;
-    }
-
     const updatedAnswers = { ...answers, [step.key]: multiSelect };
     setAnswers(updatedAnswers);
     setMessages((prev) => [...prev, { sender: 'user', text: multiSelect.join(', ') }]);
@@ -127,22 +119,10 @@ export default function OnboardingChat() {
 
   const handleOtherSubmit = () => {
     const step = steps[stepIndex];
-    const updatedAnswers = { ...answers };
-
-    if (step.key === 'tech_stack') {
-      const stack = multiSelect.filter(tool => tool !== 'Other');
-      stack.push(otherInput.trim());
-      updatedAnswers[step.key] = stack;
-      setMessages(prev => [...prev, { sender: 'user', text: otherInput.trim() }]);
-      setMultiSelect([]);
-    } else {
-      updatedAnswers[step.key] = otherInput;
-      setMessages(prev => [...prev, { sender: 'user', text: otherInput }]);
-    }
-
+    const updatedAnswers = { ...answers, [step.key]: otherInput };
     setAnswers(updatedAnswers);
+    setMessages((prev) => [...prev, { sender: 'user', text: otherInput }]);
     setOtherInput('');
-    setAwaitingOtherInput(false);
     advanceStep(updatedAnswers);
   };
 
@@ -157,7 +137,7 @@ export default function OnboardingChat() {
     } else {
       setTimeout(async () => {
         setMessages(prev => [...prev, { sender: 'bot', text: '✅ Thanks! You’ve completed the onboarding.' }]);
-        setStepIndex(nextStepIndex);
+        setStepIndex(nextStepIndex); // freeze input
         try {
           const user = auth.currentUser;
           if (user) {
@@ -200,7 +180,7 @@ export default function OnboardingChat() {
         <div ref={scrollRef} />
       </div>
 
-      {currentStep && currentStep.options && !currentStep.multi && !awaitingOtherInput && (
+      {currentStep && currentStep.options && !currentStep.multi && (
         <div className="flex flex-col gap-2">
           {currentStep.options.map((option) => (
             <button
@@ -214,7 +194,7 @@ export default function OnboardingChat() {
         </div>
       )}
 
-      {currentStep && currentStep.multi && !awaitingOtherInput && (
+      {currentStep && currentStep.multi && (
         <div className="space-y-2">
           <div className="grid grid-cols-2 gap-2">
             {currentStep.options.map((option) => (
@@ -241,7 +221,7 @@ export default function OnboardingChat() {
         </div>
       )}
 
-      {awaitingOtherInput && (
+      {messages[messages.length - 1]?.text === 'Please specify:' && (
         <div className="flex space-x-2 mt-2">
           <input
             value={otherInput}
