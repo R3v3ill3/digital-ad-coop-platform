@@ -1,4 +1,5 @@
-// frontend/src/api/chat.js
+// src/api/chat.js
+
 export async function sendMessage(input, history = []) {
   const res = await fetch('/api/campaign-assistant', {
     method: 'POST',
@@ -8,5 +9,6 @@ export async function sendMessage(input, history = []) {
 
   const data = await res.json();
   if (!res.ok) throw new Error(data.error || 'Chat request failed');
-  return data;
+
+  return data.response; // 
 }

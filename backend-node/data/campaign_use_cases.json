@@ -1,0 +1,87 @@
+[
+  {
+    "id": "industrial_workplace",
+    "subtype_id": "industrial",
+    "name": "workplace"
+  },
+  {
+    "id": "industrial_multi-site",
+    "subtype_id": "industrial",
+    "name": "multi-site"
+  },
+  {
+    "id": "industrial_industry",
+    "subtype_id": "industrial",
+    "name": "Industry"
+  },
+  {
+    "id": "political_decision",
+    "subtype_id": "political",
+    "name": "Decision"
+  },
+  {
+    "id": "political_electoral",
+    "subtype_id": "political",
+    "name": "electoral"
+  },
+  {
+    "id": "corporate_action",
+    "subtype_id": "corporate",
+    "name": "action"
+  },
+  {
+    "id": "corporate_investment_decision",
+    "subtype_id": "corporate",
+    "name": "investment decision"
+  },
+  {
+    "id": "organisational_membership",
+    "subtype_id": "organisational",
+    "name": "membership"
+  },
+  {
+    "id": "organisational_activism",
+    "subtype_id": "organisational",
+    "name": "activism"
+  },
+  {
+    "id": "organisational_contribution",
+    "subtype_id": "organisational",
+    "name": "contribution"
+  },
+  {
+    "id": "community_of_interest_participation",
+    "subtype_id": "community_of_interest",
+    "name": "participation"
+  },
+  {
+    "id": "development_policy_change",
+    "subtype_id": "development",
+    "name": "policy change"
+  },
+  {
+    "id": "development_specific_development",
+    "subtype_id": "development",
+    "name": "specific development"
+  },
+  {
+    "id": "services_co-op",
+    "subtype_id": "services",
+    "name": "co-op"
+  },
+  {
+    "id": "services_social_benefit",
+    "subtype_id": "services",
+    "name": "social benefit"
+  },
+  {
+    "id": "goods_co-op",
+    "subtype_id": "goods",
+    "name": "co-op"
+  },
+  {
+    "id": "goods_social_benefit",
+    "subtype_id": "goods",
+    "name": "social benefit"
+  }
+]

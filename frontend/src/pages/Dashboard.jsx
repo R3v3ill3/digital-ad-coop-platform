@@ -1,44 +1,49 @@
 // frontend/src/pages/Dashboard.jsx
-import React, { useEffect, useState } from 'react';
-import { db } from '../firebase';
-import { collection, onSnapshot } from 'firebase/firestore';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 export default function Dashboard() {
-  const [campaigns, setCampaigns] = useState([]);
+  console.log("✅ Dashboard component mounted");
+
+  // TEMPORARY: use fallback values until real data is passed via context or props
+  const onboardingSummary = null;
+  const campaigns = [];
+
   const navigate = useNavigate();
 
-  useEffect(() => {
-    const unsub = onSnapshot(collection(db, 'campaigns'), (snapshot) => {
-      setCampaigns(snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() })));
-    });
-    return () => unsub();
-  }, []);
-
-  const handleNewCampaign = () => {
-    navigate('/app/campaign/new'); // Adjust this route as needed
-  };
-
   return (
-    <div className="p-4 max-w-4xl mx-auto space-y-4">
-      <div className="flex justify-between items-center">
-        <h2 className="text-2xl font-bold">Your Campaigns</h2>
-        <button
-          onClick={handleNewCampaign}
-          className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
-        >
-          + New Campaign
-        </button>
-      </div>
+    <div className="p-6 space-y-6">
+      <h1 className="text-3xl font-bold">Dashboard</h1>
+      <p>Welcome to your dashboard. Manage your organisation and campaigns here.</p>
 
-      <ul className="space-y-2">
-        {campaigns.map((c) => (
-          <li key={c.id} className="p-2 border rounded">
-            <h3 className="font-semibold">{c.name}</h3>
-            <p>{c.goal}</p>
-          </li>
-        ))}
-      </ul>
+      <button
+        onClick={() => navigate('/app/campaign/new')}
+        className="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700"
+      >
+        Start a New Campaign
+      </button>
+
+      {/* Onboarding Summary Section */}
+      {onboardingSummary && (
+        <div className="bg-white shadow p-6 rounded-lg mt-6">
+          <h2 className="text-2xl font-semibold mb-4">Organisation Overview</h2>
+          <pre className="whitespace-pre-wrap">{JSON.stringify(onboardingSummary, null, 2)}</pre>
+        </div>
+      )}
+
+      {/* Campaign List Section */}
+      {campaigns && campaigns.length > 0 && (
+        <div className="bg-white shadow p-6 rounded-lg mt-6">
+          <h2 className="text-2xl font-semibold mb-4">Your Campaigns</h2>
+          <ul className="list-disc list-inside">
+            {campaigns.map((campaign) => (
+              <li key={campaign.id} className="mb-2">
+                {campaign.name} — {campaign.status}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </div>
   );
 }

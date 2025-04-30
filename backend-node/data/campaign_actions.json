@@ -1,0 +1,662 @@
+{
+  "action_types": [
+    {
+      "name": "petition",
+      "action_type_id": "AT001",
+      "description": "Petition action"
+    },
+    {
+      "name": "event",
+      "action_type_id": "AT002",
+      "description": "Event action"
+    },
+    {
+      "name": "survey",
+      "action_type_id": "AT003",
+      "description": "Survey action"
+    },
+    {
+      "name": "phonebank",
+      "action_type_id": "AT004",
+      "description": "Phonebank action"
+    },
+    {
+      "name": "social campaign",
+      "action_type_id": "AT005",
+      "description": "Social campaign action"
+    },
+    {
+      "name": "fundraising appeal",
+      "action_type_id": "AT006",
+      "description": "Fundraising appeal action"
+    },
+    {
+      "name": "targeted ad",
+      "action_type_id": "AT007",
+      "description": "Targeted ad action"
+    },
+    {
+      "name": "letter campaign",
+      "action_type_id": "AT008",
+      "description": "Letter campaign action"
+    },
+    {
+      "name": "relational organising",
+      "action_type_id": "AT009",
+      "description": "Relational organising action"
+    },
+    {
+      "name": "local visibility",
+      "action_type_id": "AT010",
+      "description": "Local visibility action"
+    },
+    {
+      "name": "supporter action pack",
+      "action_type_id": "AT011",
+      "description": "Supporter action pack action"
+    }
+  ],
+  "delivery_modes": [
+    {
+      "name": "online",
+      "delivery_mode_id": "DM001",
+      "description": "Online delivery"
+    },
+    {
+      "name": "sms",
+      "delivery_mode_id": "DM002",
+      "description": "Sms delivery"
+    },
+    {
+      "name": "volunteer",
+      "delivery_mode_id": "DM003",
+      "description": "Volunteer delivery"
+    },
+    {
+      "name": "image",
+      "delivery_mode_id": "DM004",
+      "description": "Image delivery"
+    },
+    {
+      "name": "email",
+      "delivery_mode_id": "DM005",
+      "description": "Email delivery"
+    },
+    {
+      "name": "social",
+      "delivery_mode_id": "DM006",
+      "description": "Social delivery"
+    },
+    {
+      "name": "offline",
+      "delivery_mode_id": "DM007",
+      "description": "Offline delivery"
+    },
+    {
+      "name": "digital",
+      "delivery_mode_id": "DM008",
+      "description": "Digital delivery"
+    }
+  ],
+  "cost_structures": [
+    {
+      "name": "free",
+      "cost_structure_id": "CST001"
+    },
+    {
+      "name": "paid",
+      "cost_structure_id": "CST002"
+    }
+  ],
+  "audience_types": [
+    {
+      "name": "mass",
+      "audience_type_id": "AUD001"
+    },
+    {
+      "name": "select",
+      "audience_type_id": "AUD002"
+    },
+    {
+      "name": "targeted",
+      "audience_type_id": "AUD003"
+    },
+    {
+      "name": "personal",
+      "audience_type_id": "AUD004"
+    }
+  ],
+  "channels": [
+    {
+      "name": "web",
+      "channel_id": "CH001",
+      "description": "Web channel"
+    },
+    {
+      "name": "sms",
+      "channel_id": "CH002",
+      "description": "Sms channel"
+    },
+    {
+      "name": "phone",
+      "channel_id": "CH003",
+      "description": "Phone channel"
+    },
+    {
+      "name": "social",
+      "channel_id": "CH004",
+      "description": "Social channel"
+    },
+    {
+      "name": "email",
+      "channel_id": "CH005",
+      "description": "Email channel"
+    },
+    {
+      "name": "physical",
+      "channel_id": "CH006",
+      "description": "Physical channel"
+    }
+  ],
+  "resource_intensity": [
+    {
+      "level": "low",
+      "resource_intensity_id": "RES001"
+    },
+    {
+      "level": "medium",
+      "resource_intensity_id": "RES002"
+    },
+    {
+      "level": "high",
+      "resource_intensity_id": "RES003"
+    }
+  ],
+  "prompt_types": [
+    {
+      "name": "petition_intro",
+      "prompt_type_id": "PROM001",
+      "description": "Petition intro prompt"
+    },
+    {
+      "name": "event_rsvp",
+      "prompt_type_id": "PROM002",
+      "description": "Event rsvp prompt"
+    },
+    {
+      "name": "survey_intro",
+      "prompt_type_id": "PROM003",
+      "description": "Survey intro prompt"
+    },
+    {
+      "name": "survey_sms",
+      "prompt_type_id": "PROM004",
+      "description": "Survey sms prompt"
+    },
+    {
+      "name": "phone_script",
+      "prompt_type_id": "PROM005",
+      "description": "Phone script prompt"
+    },
+    {
+      "name": "social_post",
+      "prompt_type_id": "PROM006",
+      "description": "Social post prompt"
+    },
+    {
+      "name": "fundraising_email",
+      "prompt_type_id": "PROM007",
+      "description": "Fundraising email prompt"
+    },
+    {
+      "name": "ad_copy",
+      "prompt_type_id": "PROM008",
+      "description": "Ad copy prompt"
+    },
+    {
+      "name": "letter_to_mp",
+      "prompt_type_id": "PROM009",
+      "description": "Letter to mp prompt"
+    },
+    {
+      "name": "peer_to_peer_msg",
+      "prompt_type_id": "PROM010",
+      "description": "Peer to peer msg prompt"
+    },
+    {
+      "name": "print_materials",
+      "prompt_type_id": "PROM011",
+      "description": "Print materials prompt"
+    },
+    {
+      "name": "supporter_kit",
+      "prompt_type_id": "PROM012",
+      "description": "Supporter kit prompt"
+    }
+  ],
+  "platforms": [
+    {
+      "name": "Action Network",
+      "platform_id": "PL001"
+    },
+    {
+      "name": "Yabbr",
+      "platform_id": "PL002"
+    },
+    {
+      "name": "Spoke",
+      "platform_id": "PL003"
+    },
+    {
+      "name": "Facebook",
+      "platform_id": "PL004"
+    },
+    {
+      "name": "Meta Ads",
+      "platform_id": "PL005"
+    },
+    {
+      "name": "Instagram",
+      "platform_id": "PL006"
+    },
+    {
+      "name": "Local Printer",
+      "platform_id": "PL007"
+    },
+    {
+      "name": "NationBuilder",
+      "platform_id": "PL008"
+    },
+    {
+      "name": "Zoom",
+      "platform_id": "PL009"
+    },
+    {
+      "name": "Facebook Events",
+      "platform_id": "PL010"
+    },
+    {
+      "name": "Google Forms",
+      "platform_id": "PL011"
+    },
+    {
+      "name": "Twilio",
+      "platform_id": "PL012"
+    },
+    {
+      "name": "CallHub",
+      "platform_id": "PL013"
+    },
+    {
+      "name": "TikTok",
+      "platform_id": "PL014"
+    },
+    {
+      "name": "Mailchimp",
+      "platform_id": "PL015"
+    },
+    {
+      "name": "Google Ads",
+      "platform_id": "PL016"
+    },
+    {
+      "name": "Do Gooder",
+      "platform_id": "PL017"
+    },
+    {
+      "name": "Outvote",
+      "platform_id": "PL018"
+    },
+    {
+      "name": "Officeworks",
+      "platform_id": "PL019"
+    },
+    {
+      "name": "Eventbrite",
+      "platform_id": "PL020"
+    },
+    {
+      "name": "Typeform",
+      "platform_id": "PL021"
+    },
+    {
+      "name": "Whispir",
+      "platform_id": "PL022"
+    },
+    {
+      "name": "ThruTalk",
+      "platform_id": "PL023"
+    },
+    {
+      "name": "X (Twitter)",
+      "platform_id": "PL024"
+    },
+    {
+      "name": "TikTok Ads",
+      "platform_id": "PL025"
+    },
+    {
+      "name": "Megaphone",
+      "platform_id": "PL026"
+    },
+    {
+      "name": "Empower",
+      "platform_id": "PL027"
+    },
+    {
+      "name": "Corflute Factory",
+      "platform_id": "PL028"
+    },
+    {
+      "name": "Google Drive",
+      "platform_id": "PL029"
+    }
+  ],
+  "campaign_actions": [
+    {
+      "action_id": "ACT001",
+      "action_type_id": "AT001",
+      "delivery_mode_id": "DM001",
+      "cost_structure_id": "CST001",
+      "audience_type_id": "AUD001",
+      "channel_id": "CH001",
+      "resource_intensity_id": "RES001",
+      "prompt_type_id": "PROM001",
+      "is_automatable": true
+    },
+    {
+      "action_id": "ACT002",
+      "action_type_id": "AT002",
+      "delivery_mode_id": "DM001",
+      "cost_structure_id": "CST002",
+      "audience_type_id": "AUD001",
+      "channel_id": "CH001",
+      "resource_intensity_id": "RES002",
+      "prompt_type_id": "PROM002",
+      "is_automatable": true
+    },
+    {
+      "action_id": "ACT003",
+      "action_type_id": "AT002",
+      "delivery_mode_id": "DM001",
+      "cost_structure_id": "CST001",
+      "audience_type_id": "AUD002",
+      "channel_id": "CH001",
+      "resource_intensity_id": "RES002",
+      "prompt_type_id": "PROM002",
+      "is_automatable": true
+    },
+    {
+      "action_id": "ACT004",
+      "action_type_id": "AT003",
+      "delivery_mode_id": "DM001",
+      "cost_structure_id": "CST001",
+      "audience_type_id": "AUD003",
+      "channel_id": "CH001",
+      "resource_intensity_id": "RES001",
+      "prompt_type_id": "PROM003",
+      "is_automatable": true
+    },
+    {
+      "action_id": "ACT005",
+      "action_type_id": "AT003",
+      "delivery_mode_id": "DM002",
+      "cost_structure_id": "CST001",
+      "audience_type_id": "AUD001",
+      "channel_id": "CH002",
+      "resource_intensity_id": "RES001",
+      "prompt_type_id": "PROM004",
+      "is_automatable": true
+    },
+    {
+      "action_id": "ACT006",
+      "action_type_id": "AT004",
+      "delivery_mode_id": "DM003",
+      "cost_structure_id": "CST001",
+      "audience_type_id": "AUD003",
+      "channel_id": "CH003",
+      "resource_intensity_id": "RES003",
+      "prompt_type_id": "PROM005",
+      "is_automatable": false
+    },
+    {
+      "action_id": "ACT007",
+      "action_type_id": "AT005",
+      "delivery_mode_id": "DM004",
+      "cost_structure_id": "CST001",
+      "audience_type_id": "AUD001",
+      "channel_id": "CH004",
+      "resource_intensity_id": "RES002",
+      "prompt_type_id": "PROM006",
+      "is_automatable": false
+    },
+    {
+      "action_id": "ACT008",
+      "action_type_id": "AT006",
+      "delivery_mode_id": "DM005",
+      "cost_structure_id": "CST001",
+      "audience_type_id": "AUD003",
+      "channel_id": "CH005",
+      "resource_intensity_id": "RES001",
+      "prompt_type_id": "PROM007",
+      "is_automatable": true
+    },
+    {
+      "action_id": "ACT009",
+      "action_type_id": "AT007",
+      "delivery_mode_id": "DM001",
+      "cost_structure_id": "CST002",
+      "audience_type_id": "AUD003",
+      "channel_id": "CH001",
+      "resource_intensity_id": "RES003",
+      "prompt_type_id": "PROM008",
+      "is_automatable": true
+    },
+    {
+      "action_id": "ACT010",
+      "action_type_id": "AT008",
+      "delivery_mode_id": "DM005",
+      "cost_structure_id": "CST001",
+      "audience_type_id": "AUD001",
+      "channel_id": "CH001",
+      "resource_intensity_id": "RES001",
+      "prompt_type_id": "PROM009",
+      "is_automatable": true
+    },
+    {
+      "action_id": "ACT011",
+      "action_type_id": "AT009",
+      "delivery_mode_id": "DM006",
+      "cost_structure_id": "CST001",
+      "audience_type_id": "AUD004",
+      "channel_id": "CH004",
+      "resource_intensity_id": "RES002",
+      "prompt_type_id": "PROM010",
+      "is_automatable": true
+    },
+    {
+      "action_id": "ACT012",
+      "action_type_id": "AT010",
+      "delivery_mode_id": "DM007",
+      "cost_structure_id": "CST002",
+      "audience_type_id": "AUD001",
+      "channel_id": "CH006",
+      "resource_intensity_id": "RES003",
+      "prompt_type_id": "PROM011",
+      "is_automatable": false
+    },
+    {
+      "action_id": "ACT013",
+      "action_type_id": "AT011",
+      "delivery_mode_id": "DM008",
+      "cost_structure_id": "CST001",
+      "audience_type_id": "AUD003",
+      "channel_id": "CH001",
+      "resource_intensity_id": "RES002",
+      "prompt_type_id": "PROM012",
+      "is_automatable": true
+    }
+  ],
+  "action_platforms": [
+    {
+      "action_id": "ACT001",
+      "platform_id": "PL001"
+    },
+    {
+      "action_id": "ACT002",
+      "platform_id": "PL001"
+    },
+    {
+      "action_id": "ACT003",
+      "platform_id": "PL001"
+    },
+    {
+      "action_id": "ACT008",
+      "platform_id": "PL001"
+    },
+    {
+      "action_id": "ACT010",
+      "platform_id": "PL001"
+    },
+    {
+      "action_id": "ACT013",
+      "platform_id": "PL001"
+    },
+    {
+      "action_id": "ACT001",
+      "platform_id": "PL008"
+    },
+    {
+      "action_id": "ACT008",
+      "platform_id": "PL008"
+    },
+    {
+      "action_id": "ACT001",
+      "platform_id": "PL017"
+    },
+    {
+      "action_id": "ACT010",
+      "platform_id": "PL017"
+    },
+    {
+      "action_id": "ACT013",
+      "platform_id": "PL017"
+    },
+    {
+      "action_id": "ACT002",
+      "platform_id": "PL009"
+    },
+    {
+      "action_id": "ACT002",
+      "platform_id": "PL020"
+    },
+    {
+      "action_id": "ACT003",
+      "platform_id": "PL020"
+    },
+    {
+      "action_id": "ACT003",
+      "platform_id": "PL010"
+    },
+    {
+      "action_id": "ACT004",
+      "platform_id": "PL002"
+    },
+    {
+      "action_id": "ACT005",
+      "platform_id": "PL002"
+    },
+    {
+      "action_id": "ACT011",
+      "platform_id": "PL002"
+    },
+    {
+      "action_id": "ACT004",
+      "platform_id": "PL011"
+    },
+    {
+      "action_id": "ACT004",
+      "platform_id": "PL021"
+    },
+    {
+      "action_id": "ACT005",
+      "platform_id": "PL012"
+    },
+    {
+      "action_id": "ACT005",
+      "platform_id": "PL022"
+    },
+    {
+      "action_id": "ACT006",
+      "platform_id": "PL003"
+    },
+    {
+      "action_id": "ACT006",
+      "platform_id": "PL013"
+    },
+    {
+      "action_id": "ACT006",
+      "platform_id": "PL023"
+    },
+    {
+      "action_id": "ACT007",
+      "platform_id": "PL004"
+    },
+    {
+      "action_id": "ACT007",
+      "platform_id": "PL006"
+    },
+    {
+      "action_id": "ACT007",
+      "platform_id": "PL014"
+    },
+    {
+      "action_id": "ACT007",
+      "platform_id": "PL024"
+    },
+    {
+      "action_id": "ACT008",
+      "platform_id": "PL015"
+    },
+    {
+      "action_id": "ACT009",
+      "platform_id": "PL005"
+    },
+    {
+      "action_id": "ACT009",
+      "platform_id": "PL016"
+    },
+    {
+      "action_id": "ACT009",
+      "platform_id": "PL025"
+    },
+    {
+      "action_id": "ACT010",
+      "platform_id": "PL026"
+    },
+    {
+      "action_id": "ACT011",
+      "platform_id": "PL018"
+    },
+    {
+      "action_id": "ACT011",
+      "platform_id": "PL027"
+    },
+    {
+      "action_id": "ACT012",
+      "platform_id": "PL007"
+    },
+    {
+      "action_id": "ACT012",
+      "platform_id": "PL019"
+    },
+    {
+      "action_id": "ACT012",
+      "platform_id": "PL028"
+    },
+    {
+      "action_id": "ACT013",
+      "platform_id": "PL029"
+    }
+  ]
+}

@@ -13,7 +13,7 @@ export default function Login() {
     e.preventDefault();
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      navigate('/app/dashboard');
+      navigate('/dashboard');
     } catch (e) {
       console.error('Login error', e);
     }

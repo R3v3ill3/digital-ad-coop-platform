@@ -31,7 +31,7 @@ export default function Signup() {
     setLoading(true);
     try {
       await createUserWithEmailAndPassword(auth, email, password);
-      navigate('/app/onboarding');
+      navigate('/onboarding');
     } catch (e) {
       if (e.code === 'auth/email-already-in-use') {
         setError('This email is already registered. Please log in instead.');

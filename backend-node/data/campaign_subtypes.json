@@ -1,0 +1,67 @@
+[
+  {
+    "id": "union_industrial",
+    "type_id": "union",
+    "name": "Industrial"
+  },
+  {
+    "id": "union_political",
+    "type_id": "union",
+    "name": "political"
+  },
+  {
+    "id": "envrionmental_political",
+    "type_id": "envrionmental",
+    "name": "political"
+  },
+  {
+    "id": "environmental_political",
+    "type_id": "environmental",
+    "name": "political"
+  },
+  {
+    "id": "environmental_corporate",
+    "type_id": "environmental",
+    "name": "Corporate"
+  },
+  {
+    "id": "environmental_organisational",
+    "type_id": "environmental",
+    "name": "organisational"
+  },
+  {
+    "id": "community_activism_community_of_interest",
+    "type_id": "community_activism",
+    "name": "community of interest"
+  },
+  {
+    "id": "community_activism_development",
+    "type_id": "community_activism",
+    "name": "development"
+  },
+  {
+    "id": "community_activism_organisational",
+    "type_id": "community_activism",
+    "name": "organisational"
+  },
+  {
+    "id": "community_activism_political",
+    "type_id": "community_activism",
+    "name": "political"
+  },
+  {
+    "id": "community_activism_corporate",
+    "type_id": "community_activism",
+    "name": "Corporate"
+  },
+  {
+    "id": "social_enterprise_services",
+    "type_id": "social_enterprise",
+    "name": "services"
+  },
+  {
+    "id": "social_enterprise_goods",
+    "type_id": "social_enterprise",
+    "name": "goods"
+  }
+]

@@ -1,0 +1,631 @@
+[
+  {
+    "use_case_id": "corporate_action",
+    "goals": [
+      {
+        "goal_id": "participation",
+        "priority": 1
+      },
+      {
+        "goal_id": "membership",
+        "priority": 2
+      },
+      {
+        "goal_id": "activism",
+        "priority": 3
+      },
+      {
+        "goal_id": "donation",
+        "priority": 4
+      },
+      {
+        "goal_id": "sales",
+        "priority": 5
+      },
+      {
+        "goal_id": "vote",
+        "priority": 6
+      },
+      {
+        "goal_id": "corporate_decision",
+        "priority": 7
+      },
+      {
+        "goal_id": "poltical_decision",
+        "priority": 8
+      }
+    ]
+  },
+  {
+    "use_case_id": "corporate_investment_decision",
+    "goals": [
+      {
+        "goal_id": "participation",
+        "priority": 1
+      },
+      {
+        "goal_id": "membership",
+        "priority": 2
+      },
+      {
+        "goal_id": "activism",
+        "priority": 3
+      },
+      {
+        "goal_id": "donation",
+        "priority": 4
+      },
+      {
+        "goal_id": "sales",
+        "priority": 5
+      },
+      {
+        "goal_id": "vote",
+        "priority": 6
+      },
+      {
+        "goal_id": "corporate_decision",
+        "priority": 7
+      },
+      {
+        "goal_id": "poltical_decision",
+        "priority": 8
+      }
+    ]
+  },
+  {
+    "use_case_id": "industrial_industry",
+    "goals": [
+      {
+        "goal_id": "participation",
+        "priority": 1
+      },
+      {
+        "goal_id": "membership",
+        "priority": 2
+      },
+      {
+        "goal_id": "activism",
+        "priority": 3
+      },
+      {
+        "goal_id": "donation",
+        "priority": 4
+      },
+      {
+        "goal_id": "sales",
+        "priority": 5
+      },
+      {
+        "goal_id": "vote",
+        "priority": 6
+      },
+      {
+        "goal_id": "corporate_decision",
+        "priority": 7
+      },
+      {
+        "goal_id": "poltical_decision",
+        "priority": 8
+      }
+    ]
+  },
+  {
+    "use_case_id": "industrial_large_employer",
+    "goals": [
+      {
+        "goal_id": "participation",
+        "priority": 1
+      },
+      {
+        "goal_id": "membership",
+        "priority": 2
+      },
+      {
+        "goal_id": "activism",
+        "priority": 3
+      },
+      {
+        "goal_id": "donation",
+        "priority": 4
+      },
+      {
+        "goal_id": "sales",
+        "priority": 5
+      },
+      {
+        "goal_id": "vote",
+        "priority": 6
+      },
+      {
+        "goal_id": "corporate_decision",
+        "priority": 7
+      },
+      {
+        "goal_id": "poltical_decision",
+        "priority": 8
+      }
+    ]
+  },
+  {
+    "use_case_id": "industrial_workplace",
+    "goals": [
+      {
+        "goal_id": "participation",
+        "priority": 1
+      },
+      {
+        "goal_id": "membership",
+        "priority": 2
+      },
+      {
+        "goal_id": "activism",
+        "priority": 3
+      },
+      {
+        "goal_id": "donation",
+        "priority": 4
+      },
+      {
+        "goal_id": "sales",
+        "priority": 5
+      },
+      {
+        "goal_id": "vote",
+        "priority": 6
+      },
+      {
+        "goal_id": "corporate_decision",
+        "priority": 7
+      },
+      {
+        "goal_id": "poltical_decision",
+        "priority": 8
+      }
+    ]
+  },
+  {
+    "use_case_id": "community_of_interest_participation",
+    "goals": [
+      {
+        "goal_id": "participation",
+        "priority": 1
+      },
+      {
+        "goal_id": "membership",
+        "priority": 2
+      },
+      {
+        "goal_id": "activism",
+        "priority": 3
+      },
+      {
+        "goal_id": "donation",
+        "priority": 4
+      },
+      {
+        "goal_id": "sales",
+        "priority": 5
+      },
+      {
+        "goal_id": "vote",
+        "priority": 6
+      },
+      {
+        "goal_id": "corporate_decision",
+        "priority": 7
+      },
+      {
+        "goal_id": "poltical_decision",
+        "priority": 8
+      }
+    ]
+  },
+  {
+    "use_case_id": "development_policy_change",
+    "goals": [
+      {
+        "goal_id": "participation",
+        "priority": 1
+      },
+      {
+        "goal_id": "membership",
+        "priority": 2
+      },
+      {
+        "goal_id": "activism",
+        "priority": 3
+      },
+      {
+        "goal_id": "donation",
+        "priority": 4
+      },
+      {
+        "goal_id": "sales",
+        "priority": 5
+      },
+      {
+        "goal_id": "vote",
+        "priority": 6
+      },
+      {
+        "goal_id": "corporate_decision",
+        "priority": 7
+      },
+      {
+        "goal_id": "poltical_decision",
+        "priority": 8
+      }
+    ]
+  },
+  {
+    "use_case_id": "development_specific_development",
+    "goals": [
+      {
+        "goal_id": "participation",
+        "priority": 1
+      },
+      {
+        "goal_id": "membership",
+        "priority": 2
+      },
+      {
+        "goal_id": "activism",
+        "priority": 3
+      },
+      {
+        "goal_id": "donation",
+        "priority": 4
+      },
+      {
+        "goal_id": "sales",
+        "priority": 5
+      },
+      {
+        "goal_id": "vote",
+        "priority": 6
+      },
+      {
+        "goal_id": "corporate_decision",
+        "priority": 7
+      },
+      {
+        "goal_id": "poltical_decision",
+        "priority": 8
+      }
+    ]
+  },
+  {
+    "use_case_id": "goods_co-op",
+    "goals": [
+      {
+        "goal_id": "participation",
+        "priority": 1
+      },
+      {
+        "goal_id": "membership",
+        "priority": 2
+      },
+      {
+        "goal_id": "activism",
+        "priority": 3
+      },
+      {
+        "goal_id": "donation",
+        "priority": 4
+      },
+      {
+        "goal_id": "sales",
+        "priority": 5
+      },
+      {
+        "goal_id": "vote",
+        "priority": 6
+      },
+      {
+        "goal_id": "corporate_decision",
+        "priority": 7
+      },
+      {
+        "goal_id": "poltical_decision",
+        "priority": 8
+      }
+    ]
+  },
+  {
+    "use_case_id": "goods_social_benefit",
+    "goals": [
+      {
+        "goal_id": "participation",
+        "priority": 1
+      },
+      {
+        "goal_id": "membership",
+        "priority": 2
+      },
+      {
+        "goal_id": "activism",
+        "priority": 3
+      },
+      {
+        "goal_id": "donation",
+        "priority": 4
+      },
+      {
+        "goal_id": "sales",
+        "priority": 5
+      },
+      {
+        "goal_id": "vote",
+        "priority": 6
+      },
+      {
+        "goal_id": "corporate_decision",
+        "priority": 7
+      },
+      {
+        "goal_id": "poltical_decision",
+        "priority": 8
+      }
+    ]
+  },
+  {
+    "use_case_id": "organisational_activism",
+    "goals": [
+      {
+        "goal_id": "participation",
+        "priority": 1
+      },
+      {
+        "goal_id": "membership",
+        "priority": 2
+      },
+      {
+        "goal_id": "activism",
+        "priority": 3
+      },
+      {
+        "goal_id": "donation",
+        "priority": 4
+      },
+      {
+        "goal_id": "sales",
+        "priority": 5
+      },
+      {
+        "goal_id": "vote",
+        "priority": 6
+      },
+      {
+        "goal_id": "corporate_decision",
+        "priority": 7
+      },
+      {
+        "goal_id": "poltical_decision",
+        "priority": 8
+      }
+    ]
+  },
+  {
+    "use_case_id": "organisational_contribution",
+    "goals": [
+      {
+        "goal_id": "participation",
+        "priority": 1
+      },
+      {
+        "goal_id": "membership",
+        "priority": 2
+      },
+      {
+        "goal_id": "activism",
+        "priority": 3
+      },
+      {
+        "goal_id": "donation",
+        "priority": 4
+      },
+      {
+        "goal_id": "sales",
+        "priority": 5
+      },
+      {
+        "goal_id": "vote",
+        "priority": 6
+      },
+      {
+        "goal_id": "corporate_decision",
+        "priority": 7
+      },
+      {
+        "goal_id": "poltical_decision",
+        "priority": 8
+      }
+    ]
+  },
+  {
+    "use_case_id": "organisational_membership",
+    "goals": [
+      {
+        "goal_id": "participation",
+        "priority": 1
+      },
+      {
+        "goal_id": "membership",
+        "priority": 2
+      },
+      {
+        "goal_id": "activism",
+        "priority": 3
+      },
+      {
+        "goal_id": "donation",
+        "priority": 4
+      },
+      {
+        "goal_id": "sales",
+        "priority": 5
+      },
+      {
+        "goal_id": "vote",
+        "priority": 6
+      },
+      {
+        "goal_id": "corporate_decision",
+        "priority": 7
+      },
+      {
+        "goal_id": "poltical_decision",
+        "priority": 8
+      }
+    ]
+  },
+  {
+    "use_case_id": "political_decision",
+    "goals": [
+      {
+        "goal_id": "participation",
+        "priority": 1
+      },
+      {
+        "goal_id": "membership",
+        "priority": 2
+      },
+      {
+        "goal_id": "activism",
+        "priority": 3
+      },
+      {
+        "goal_id": "donation",
+        "priority": 4
+      },
+      {
+        "goal_id": "sales",
+        "priority": 5
+      },
+      {
+        "goal_id": "vote",
+        "priority": 6
+      },
+      {
+        "goal_id": "corporate_decision",
+        "priority": 7
+      },
+      {
+        "goal_id": "poltical_decision",
+        "priority": 8
+      }
+    ]
+  },
+  {
+    "use_case_id": "political_electoral",
+    "goals": [
+      {
+        "goal_id": "participation",
+        "priority": 1
+      },
+      {
+        "goal_id": "membership",
+        "priority": 2
+      },
+      {
+        "goal_id": "activism",
+        "priority": 3
+      },
+      {
+        "goal_id": "donation",
+        "priority": 4
+      },
+      {
+        "goal_id": "sales",
+        "priority": 5
+      },
+      {
+        "goal_id": "vote",
+        "priority": 6
+      },
+      {
+        "goal_id": "corporate_decision",
+        "priority": 7
+      },
+      {
+        "goal_id": "poltical_decision",
+        "priority": 8
+      }
+    ]
+  },
+  {
+    "use_case_id": "services_co-op",
+    "goals": [
+      {
+        "goal_id": "participation",
+        "priority": 1
+      },
+      {
+        "goal_id": "membership",
+        "priority": 2
+      },
+      {
+        "goal_id": "activism",
+        "priority": 3
+      },
+      {
+        "goal_id": "donation",
+        "priority": 4
+      },
+      {
+        "goal_id": "sales",
+        "priority": 5
+      },
+      {
+        "goal_id": "vote",
+        "priority": 6
+      },
+      {
+        "goal_id": "corporate_decision",
+        "priority": 7
+      },
+      {
+        "goal_id": "poltical_decision",
+        "priority": 8
+      }
+    ]
+  },
+  {
+    "use_case_id": "services_social_benefit",
+    "goals": [
+      {
+        "goal_id": "participation",
+        "priority": 1
+      },
+      {
+        "goal_id": "membership",
+        "priority": 2
+      },
+      {
+        "goal_id": "activism",
+        "priority": 3
+      },
+      {
+        "goal_id": "donation",
+        "priority": 4
+      },
+      {
+        "goal_id": "sales",
+        "priority": 5
+      },
+      {
+        "goal_id": "vote",
+        "priority": 6
+      },
+      {
+        "goal_id": "corporate_decision",
+        "priority": 7
+      },
+      {
+        "goal_id": "poltical_decision",
+        "priority": 8
+      }
+    ]
+  }
+]

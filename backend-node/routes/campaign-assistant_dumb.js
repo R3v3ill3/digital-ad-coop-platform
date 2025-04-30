@@ -17,10 +17,11 @@ function detectFinalSummaryMessage(message) {
   return (
     lower.includes("✅ final summary complete") ||
     lower.includes("here's the final summary") ||
-    lower.includes("this could be a powerful campaign") ||
-    lower.includes("best of luck with your campaign") ||
+    lower.includes("summary of your campaign") ||
     lower.includes("you've got this") ||
+    lower.includes("this could be a powerful campaign") ||
     lower.includes("you're ready to start making real change") ||
+    lower.includes("best of luck with your campaign") ||
     lower.includes("together we can make your workplace better")
   );
 }
@@ -43,7 +44,10 @@ You are a sharp, confident, and experienced campaign strategist who works with u
 
 Your job is to guide users through a quick conversation to understand their campaign, classify it, and prepare it for planning.
 
-(📜 SYSTEM PROMPT SHORTENED — FULL TEXT AVAILABLE IF NEEDED)
+When you believe you have collected all necessary information, clearly conclude the conversation by typing **only**:
+✅ Final summary complete
+
+Do not add any extra commentary or text after this line.
         `.trim(),
       },
       ...history.map((msg) => ({
@@ -69,10 +73,17 @@ Your job is to guide users through a quick conversation to understand their camp
     let parsed;
     try {
       parsed = JSON.parse(rawMessage);
+
+      // Add fallback aiMessage for frontend display
+      if (!parsed.aiMessage) {
+        parsed.aiMessage = rawMessage;
+      }
+
+      console.log('✅ Parsed structured response with done =', parsed.done ?? 'undefined');
       return res.status(200).json(parsed);
     } catch (err) {
-      // Fallback to natural language detection
       const isFinalSummary = detectFinalSummaryMessage(rawMessage);
+      console.log(`🧠 Raw response detected. Done = ${isFinalSummary}. Message preview:`, rawMessage.slice(0, 120));
       return res.status(200).json({
         aiMessage: rawMessage,
         done: isFinalSummary,

@@ -165,7 +165,7 @@ export default function OnboardingChat() {
               ...updatedAnswers,
               completedAt: new Date(),
             });
-            navigate('/app/dashboard');
+            navigate('/dashboard');
           } else {
             setMessages(prev => [...prev, { sender: 'bot', text: '⚠️ User not authenticated — unable to save.' }]);
           }

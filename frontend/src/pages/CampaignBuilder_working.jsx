@@ -59,9 +59,7 @@ export default function CampaignBuilder() {
     <div className="space-y-4 max-h-[50vh] overflow-y-auto border rounded p-4 mb-4">
       {history.map((msg, index) => (
         <div key={index} className={`p-2 rounded ${msg.role === 'user' ? 'bg-gray-100' : 'bg-blue-50'}`}>
-          <strong>
-            {msg.role === 'user' ? 'You' : summary?.structured ? '🎯 Assistant' : '🧠 Assistant'}:
-          </strong>
+          <strong>{msg.role === 'user' ? 'You' : msg.structured ? '🎯 Assistant' : '🧠 Assistant'}:</strong>
           <div className="whitespace-pre-wrap">{msg.content}</div>
         </div>
       ))}
@@ -109,7 +107,7 @@ export default function CampaignBuilder() {
           disabled={loading}
           className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded"
         >
-          {loading ? 'Thinking…' : 'Send'}
+          {loading ? 'Sending...' : 'Send'}
         </button>
 
         {!summary && (
@@ -123,6 +121,7 @@ export default function CampaignBuilder() {
       </div>
 
       {error && <p className="text-red-600 mt-2">{error}</p>}
+
       {summary && renderNextSteps()}
     </div>
   );

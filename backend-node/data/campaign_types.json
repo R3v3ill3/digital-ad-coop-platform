@@ -1,0 +1,18 @@
+[
+  {
+    "id": "union",
+    "name": "union"
+  },
+  {
+    "id": "environmental",
+    "name": "Environmental"
+  },
+  {
+    "id": "community_activism",
+    "name": "Community Activism"
+  },
+  {
+    "id": "social_enterprise",
+    "name": "Social enterprise"
+  }
+]

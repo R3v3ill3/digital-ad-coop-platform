@@ -1,0 +1,151 @@
+[
+  {
+    "campaign_type_id":"CT001",
+    "primary_type":"Union Campaign",
+    "secondary_type":"Industrial",
+    "sub_type":"Workplace",
+    "description":"A campaign focused on resolving disputes within a single workplace.",
+    "primary_goal_category":"Mobilisation",
+    "secondary_goal_category":"Participation",
+    "tertiary_goal_category":"Awareness",
+    "incidental_goal_category":"Growth",
+    "content_prompt_style":"strike_notice",
+    "platform_alignment":[
+      "Yabbr",
+      "Action Network"
+    ],
+    "audience_strategy":"Mass",
+    "automation_ready":true,
+    "example":"Strike ballot at XYZ Hospital due to unsafe staffing levels.",
+    "tags":[
+      "health",
+      "workplace",
+      "union",
+      "industrial"
+    ]
+  },
+  {
+    "campaign_type_id":"CT002",
+    "primary_type":"Union Campaign",
+    "secondary_type":"Political",
+    "sub_type":"Legislative",
+    "description":"Influencing government to amend or introduce legislation related to worker rights.",
+    "primary_goal_category":"Persuasion",
+    "secondary_goal_category":"Participation",
+    "tertiary_goal_category":"Mobilisation",
+    "incidental_goal_category":"Awareness",
+    "content_prompt_style":"policy_lobby",
+    "platform_alignment":[
+      "Action Network",
+      "Do Gooder"
+    ],
+    "audience_strategy":"Targeted",
+    "automation_ready":true,
+    "example":"Campaign to introduce nurse-patient ratio legislation.",
+    "tags":[
+      "legislation",
+      "nurses",
+      "government"
+    ]
+  },
+  {
+    "campaign_type_id":"CT003",
+    "primary_type":"Growth",
+    "secondary_type":"Member Engagement",
+    "sub_type":"Professional Voice",
+    "description":"Showcasing the expertise of the organisation to improve credibility and trust.",
+    "primary_goal_category":"Growth",
+    "secondary_goal_category":"Trust Building",
+    "tertiary_goal_category":"Participation",
+    "incidental_goal_category":"Awareness",
+    "content_prompt_style":"trust_building",
+    "platform_alignment":[
+      "Mailchimp",
+      "Facebook"
+    ],
+    "audience_strategy":"Mass",
+    "automation_ready":true,
+    "example":"Public campaign on clinical leadership by midwives.",
+    "tags":[
+      "professional",
+      "voice",
+      "health",
+      "engagement"
+    ]
+  },
+  {
+    "campaign_type_id":"CT004",
+    "primary_type":"Electoral",
+    "secondary_type":"Candidate Support",
+    "sub_type":"Endorsement",
+    "description":"Campaigns supporting or opposing specific candidates.",
+    "primary_goal_category":"Persuasion",
+    "secondary_goal_category":"Turnout",
+    "tertiary_goal_category":"Awareness",
+    "incidental_goal_category":"Engagement",
+    "content_prompt_style":"candidate_backing",
+    "platform_alignment":[
+      "Yabbr",
+      "Spoke",
+      "NationBuilder"
+    ],
+    "audience_strategy":"Targeted",
+    "automation_ready":false,
+    "example":"Campaign opposing anti-union candidates in marginal electorates.",
+    "tags":[
+      "election",
+      "marginal seats",
+      "endorsement"
+    ]
+  },
+  {
+    "campaign_type_id":"CT005",
+    "primary_type":"Advocacy",
+    "secondary_type":"Social Justice",
+    "sub_type":"Rights Awareness",
+    "description":"Raising public understanding and support for rights-based issues.",
+    "primary_goal_category":"Awareness",
+    "secondary_goal_category":"Engagement",
+    "tertiary_goal_category":"Participation",
+    "incidental_goal_category":"Growth",
+    "content_prompt_style":"rights_awareness",
+    "platform_alignment":[
+      "Instagram",
+      "TikTok",
+      "Action Network"
+    ],
+    "audience_strategy":"Mass",
+    "automation_ready":true,
+    "example":"Public campaign to build support for transgender healthcare access.",
+    "tags":[
+      "rights",
+      "equality",
+      "healthcare"
+    ]
+  },
+  {
+    "campaign_type_id":"CT006",
+    "primary_type":"Union Campaign",
+    "secondary_type":"Organising",
+    "sub_type":"New Site Recruitment",
+    "description":"Establishing union presence and recruiting members at new sites.",
+    "primary_goal_category":"Growth",
+    "secondary_goal_category":"Engagement",
+    "tertiary_goal_category":"Trust Building",
+    "incidental_goal_category":"Mobilisation",
+    "content_prompt_style":"organising_pitch",
+    "platform_alignment":[
+      "Yabbr",
+      "Action Network",
+      "FieldEdge"
+    ],
+    "audience_strategy":"Peer-to-Peer",
+    "automation_ready":false,
+    "example":"Organiser campaign to unionise a private aged care provider.",
+    "tags":[
+      "organising",
+      "aged care",
+      "recruitment"
+    ]
+  }
+]

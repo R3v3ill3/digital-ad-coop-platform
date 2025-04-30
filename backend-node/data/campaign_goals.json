@@ -1,0 +1,42 @@
+[
+  {
+    "id": "participation",
+    "name": "participation"
+  },
+  {
+    "id": "membership",
+    "name": "membership"
+  },
+  {
+    "id": "activism",
+    "name": "activism"
+  },
+  {
+    "id": "donation",
+    "name": "donation"
+  },
+  {
+    "id": "sales",
+    "name": "sales"
+  },
+  {
+    "id": "vote",
+    "name": "vote"
+  },
+  {
+    "id": "corporate_decision",
+    "name": "corporate decision"
+  },
+  {
+    "id": "poltical_decision",
+    "name": "poltical decision"
+  },
+  {
+    "id": "issue_awareness",
+    "name": "issue awareness"
+  },
+  {
+    "id": "issue_support",
+    "name": "issue support"
+  }
+]
